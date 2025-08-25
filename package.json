@@ -7,8 +7,10 @@
     "dev": "live-server --port=3000 --open=/",
     "build": "echo 'Static site - no build step required'",
     "start": "live-server --port=3000",
+    "setup-database": "./setup-database.sh",
     "install-firecrawl": "./install-firecrawl.sh",
-    "setup": "npm install && ./install-firecrawl.sh"
+    "setup": "npm install && ./install-firecrawl.sh",
+    "setup-all": "npm install && ./setup-database.sh"
   },
   "keywords": [
     "christian",
