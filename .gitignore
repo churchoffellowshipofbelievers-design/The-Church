@@ -127,3 +127,5 @@ temp/
 
 # Trunk
 .trunk/
+
+.early.coverage
