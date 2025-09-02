@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Fellowship of Believers</title>
+    <meta name="description" content="Join our Christian fellowship community. Create an account to participate in Bible studies, prayer groups, and fellowship activities.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-cross"></i>
+                    <span>Fellowship of Believers</span>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#fellowship">Fellowship</a></li>
+                    <li><a href="index.html#scripture">Scripture Study</a></li>
+                    <li><a href="index.html#trivia">Bible Trivia</a></li>
+                    <li><a href="index.html#community">Community</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                    <li><a href="signup.html" class="nav-signup active">Sign Up</a></li>
+                </ul>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="signup-main">
+        <div class="container">
+            <div class="signup-container">
+                <div class="signup-header">
+                    <h1>Join Our Fellowship</h1>
+                    <p>"Come and see what God has done, how awesome his works in man's behalf!" - Psalm 66:5</p>
+                </div>
+
+                <div class="signup-content">
+                    <div class="signup-form-container">
+                        <form class="signup-form" id="signup-form">
+                            <div class="form-section">
+                                <h3><i class="fas fa-user"></i> Personal Information</h3>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="first-name">First Name *</label>
+                                        <input type="text" id="first-name" name="firstName" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="last-name">Last Name *</label>
+                                        <input type="text" id="last-name" name="lastName" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="date-of-birth">Date of Birth</label>
+                                    <input type="date" id="date-of-birth" name="dateOfBirth">
+                                </div>
+                            </div>
+
+                            <div class="form-section">
+                                <h3><i class="fas fa-lock"></i> Account Security</h3>
+                                
+                                <div class="form-group">
+                                    <label for="password">Password *</label>
+                                    <div class="password-input">
+                                        <input type="password" id="password" name="password" required>
+                                        <button type="button" class="password-toggle" id="password-toggle">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                    </div>
+                                    <div class="password-strength" id="password-strength">
+                                        <div class="strength-bar">
+                                            <div class="strength-fill" id="strength-fill"></div>
+                                        </div>
+                                        <span class="strength-text" id="strength-text">Password strength</span>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="confirm-password">Confirm Password *</label>
+                                    <div class="password-input">
+                                        <input type="password" id="confirm-password" name="confirmPassword" required>
+                                        <button type="button" class="password-toggle" id="confirm-password-toggle">
+                                            <i class="fas fa-eye"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-section">
+                                <h3><i class="fas fa-map-marker-alt"></i> Location & Church</h3>
+                                
+                                <div class="form-group">
+                                    <label for="city">City *</label>
+                                    <input type="text" id="city" name="city" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="state">State/Province</label>
+                                    <input type="text" id="state" name="state">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="country">Country *</label>
+                                    <select id="country" name="country" required>
+                                        <option value="">Select your country</option>
+                                        <option value="US">United States</option>
+                                        <option value="CA">Canada</option>
+                                        <option value="UK">United Kingdom</option>
+                                        <option value="AU">Australia</option>
+                                        <option value="DE">Germany</option>
+                                        <option value="FR">France</option>
+                                        <option value="other">Other</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="church-affiliation">Church Affiliation</label>
+                                    <select id="church-affiliation" name="churchAffiliation">
+                                        <option value="">Select your church affiliation</option>
+                                        <option value="baptist">Baptist</option>
+                                        <option value="catholic">Catholic</option>
+                                        <option value="lutheran">Lutheran</option>
+                                        <option value="methodist">Methodist</option>
+                                        <option value="presbyterian">Presbyterian</option>
+                                        <option value="anglican">Anglican/Episcopal</option>
+                                        <option value="pentecostal">Pentecostal</option>
+                                        <option value="nondenominational">Non-denominational</option>
+                                        <option value="other">Other</option>
+                                        <option value="none">No current affiliation</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-section">
+                                <h3><i class="fas fa-heart"></i> Fellowship Preferences</h3>
+                                
+                                <div class="form-group">
+                                    <label>Areas of Interest (select all that apply)</label>
+                                    <div class="checkbox-grid">
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="interests" value="bible-study">
+                                            <span class="checkmark"></span>
+                                            Bible Study
+                                        </label>
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="interests" value="prayer-groups">
+                                            <span class="checkmark"></span>
+                                            Prayer Groups
+                                        </label>
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="interests" value="worship">
+                                            <span class="checkmark"></span>
+                                            Worship & Music
+                                        </label>
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="interests" value="youth-ministry">
+                                            <span class="checkmark"></span>
+                                            Youth Ministry
+                                        </label>
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="interests" value="missions">
+                                            <span class="checkmark"></span>
+                                            Missions & Outreach
+                                        </label>
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" name="interests" value="fellowship">
+                                            <span class="checkmark"></span>
+                                            General Fellowship
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="experience-level">Bible Knowledge Level</label>
+                                    <select id="experience-level" name="experienceLevel">
+                                        <option value="">Select your level</option>
+                                        <option value="beginner">Beginner - New to Bible study</option>
+                                        <option value="intermediate">Intermediate - Some Bible knowledge</option>
+                                        <option value="advanced">Advanced - Extensive Bible knowledge</option>
+                                        <option value="scholar">Scholar - Theological education</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="availability">Preferred Meeting Times</label>
+                                    <select id="availability" name="availability">
+                                        <option value="">Select your preference</option>
+                                        <option value="weekday-evening">Weekday Evenings</option>
+                                        <option value="weekend-morning">Weekend Mornings</option>
+                                        <option value="weekend-afternoon">Weekend Afternoons</option>
+                                        <option value="flexible">Flexible - Any time works</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-section">
+                                <h3><i class="fas fa-shield-alt"></i> Terms & Privacy</h3>
+                                
+                                <div class="form-group checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" id="terms-accept" name="termsAccept" required>
+                                        <span class="checkmark"></span>
+                                        I agree to the <a href="#" class="link">Terms of Service</a> and <a href="#" class="link">Privacy Policy</a> *
+                                    </label>
+                                </div>
+
+                                <div class="form-group checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" id="newsletter" name="newsletter">
+                                        <span class="checkmark"></span>
+                                        I would like to receive newsletters and updates about fellowship events
+                                    </label>
+                                </div>
+
+                                <div class="form-group checkbox-group">
+                                    <label class="checkbox-label">
+                                        <input type="checkbox" id="prayer-updates" name="prayerUpdates">
+                                        <span class="checkmark"></span>
+                                        I would like to receive prayer request updates and community prayer needs
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-actions">
+                                <button type="submit" class="btn btn-primary btn-large">
+                                    <i class="fas fa-user-plus"></i>
+                                    Create Account
+                                </button>
+                                <p class="form-note">* Required fields</p>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="signup-sidebar">
+                        <div class="sidebar-card">
+                            <h3>Why Join Our Fellowship?</h3>
+                            <ul class="benefits-list">
+                                <li><i class="fas fa-check"></i> Connect with believers worldwide</li>
+                                <li><i class="fas fa-check"></i> Participate in Bible studies</li>
+                                <li><i class="fas fa-check"></i> Join prayer groups</li>
+                                <li><i class="fas fa-check"></i> Access spiritual resources</li>
+                                <li><i class="fas fa-check"></i> Build meaningful relationships</li>
+                                <li><i class="fas fa-check"></i> Grow in your faith journey</li>
+                            </ul>
+                        </div>
+
+                        <div class="sidebar-card">
+                            <h3>Already Have an Account?</h3>
+                            <p>Sign in to access your fellowship dashboard and connect with other believers.</p>
+                            <a href="#" class="btn btn-outline">Sign In</a>
+                        </div>
+
+                        <div class="sidebar-card">
+                            <h3>Need Help?</h3>
+                            <p>If you have any questions about joining our fellowship, we're here to help!</p>
+                            <a href="index.html#contact" class="btn btn-outline">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Fellowship of Believers</h4>
+                    <p>Building authentic Christian community based on the New Testament understanding of church as fellowship.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#fellowship">Fellowship</a></li>
+                        <li><a href="index.html#scripture">Scripture Study</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Fellowship of Believers. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="bible-api-config.js"></script>
+    <script src="firecrawl-config.js"></script>
+    <script src="script.js"></script>
+    <script src="signup.js"></script>
+</body>
+</html>
