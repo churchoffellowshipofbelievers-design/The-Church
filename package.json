@@ -1,14 +1,29 @@
 {
-<<<<<<< HEAD
   "name": "the-church",
   "version": "0.1.0",
   "private": true,
+  "description": "A Christian fellowship website based on New Testament understanding of church as community",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "setup-complete": "./setup-all-in-one.sh",
+    "setup-database": "./setup-database.sh",
+    "install-firecrawl": "./install-firecrawl.sh",
+    "setup": "npm install && ./setup-all-in-one.sh",
+    "setup-all": "npm install && ./setup-all-in-one.sh"
   },
+  "keywords": [
+    "christian",
+    "fellowship",
+    "bible",
+    "church",
+    "community",
+    "faith"
+  ],
+  "author": "Fellowship of Believers",
+  "license": "MIT",
   "dependencies": {
     "@supabase/ssr": "^0.7.0",
     "@supabase/supabase-js": "^2.56.1",
@@ -27,36 +42,5 @@
     "postcss": "^8.4.0",
     "tailwindcss": "^3.4.0",
     "typescript": "^5"
-=======
-  "name": "fellowship-of-believers",
-  "version": "1.0.0",
-  "description": "A Christian fellowship website based on New Testament understanding of church as community",
-  "main": "index.html",
-  "scripts": {
-    "dev": "live-server --port=3000 --open=/",
-    "build": "echo 'Static site - no build step required'",
-    "start": "live-server --port=3000",
-    "setup-complete": "./setup-all-in-one.sh",
-    "setup-database": "./setup-database.sh",
-    "install-firecrawl": "./install-firecrawl.sh",
-    "setup": "npm install && ./setup-all-in-one.sh",
-    "setup-all": "npm install && ./setup-all-in-one.sh"
-  },
-  "keywords": [
-    "christian",
-    "fellowship",
-    "bible",
-    "church",
-    "community",
-    "faith"
-  ],
-  "author": "Fellowship of Believers",
-  "license": "MIT",
-  "devDependencies": {
-    "live-server": "^1.2.2"
-  },
-  "dependencies": {
-    "@supabase/supabase-js": "^2.38.0"
->>>>>>> 41b78f42a4492721aae751d5419b5c0364fcf414
   }
 }

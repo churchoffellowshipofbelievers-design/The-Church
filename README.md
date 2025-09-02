@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # The Church - Fellowship of the Believers
 
 A comprehensive digital platform that educates and connects believers around authentic New Testament church fellowship principles, emphasizing the priesthood of all believers, participatory worship, and decentralized, servant-led community.
@@ -84,68 +83,6 @@ FIRECRAWL_API_KEY=your-firecrawl-api-key
 ```
 
 ### 4. Run Development Server
-=======
-# 🕊️ Fellowship of Believers
-
-[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen?style=for-the-badge)](https://churchoffellowshipofbelievers-design.github.io/The-Church/)
-[![GitHub Pages](https://img.shields.io/badge/GitHub-Pages-blue?style=for-the-badge&logo=github)](https://github.com/churchoffellowshipofbelievers-design/The-Church)
-[![MIT License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](./LICENSE)
-[![HTML5](https://img.shields.io/badge/HTML-5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/CSS-3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
-[![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-
-> *"For where two or three gather in my name, there am I with them."* - Matthew 18:20
-
-A **Christian fellowship website** based on the New Testament understanding of "church" as a **community of believers** rather than a building. This platform creates digital spaces for believers to connect, study Scripture together, and build authentic relationships - just as the early church did.
-
-## 🌟 What Makes This Special
-
-### ✝️ **Biblical Foundation**
-- **Not a church building** - focuses on authentic fellowship
-- **Community-driven** rather than clergy-led
-- **Relationship-focused** rather than program-focused
-- **Scripture-based** foundation for all features
-
-### 🚀 **Rich Features**
-- **10+ Free Christian APIs** providing real-time content
-- **Interactive Bible Study** with trivia and search
-- **Community Prayer Wall** with request sharing
-- **Personal Spiritual Dashboard** with growth tracking
-- **Small Group Management** for local fellowship
-
-## 📱 **Live Demo**
-
-🔗 **Visit the website**: [Fellowship of Believers](https://churchoffellowshipofbelievers-design.github.io/The-Church/)
-
-## ✨ **Key Features**
-
-### 🏠 **Fellowship & Community**
-- **Small Group Management** with search and filtering
-- **Featured Fellowship Groups** (Bible Study, Prayer, Youth, etc.)
-- **Community Discussion Forums** for meaningful conversations
-- **Event Coordination** for local gatherings
-- **Member Profiles** and connections
-
-### 📖 **Biblical Study Tools**
-- **Daily Bible Verses** with multiple translations
-- **Interactive Bible Trivia** with categories (Gospels, Acts, Pauline Epistles)
-- **Scripture Search** with passage display and sharing
-- **Bible Study Resources** and materials
-- **Christian Calendar** with holidays and events
-
-### 🙏 **Prayer & Support**
-- **Community Prayer Wall** with request submission
-- **Prayer Request Categories** and filtering
-- **Personal Prayer Journal** integration
-- **Prayer Statistics** and community engagement
-- **Intercession Support** networks
-
-### 📊 **Personal Growth**
-- **Spiritual Dashboard** with progress tracking
-- **Bible Reading Metrics** (days, verses, chapters)
-- **Prayer Request Management** (active, answered)
-- **Fellowship Group Participation** tracking
-- **Growth Analytics** and insights
 
 ### 🌐 **Rich Content Integration**
 - **Multiple Bible APIs** (Scripture API, Bible Gateway, OpenBible)
@@ -184,12 +121,10 @@ npm install
 ```
 
 3. **Start development server**
->>>>>>> 41b78f42a4492721aae751d5419b5c0364fcf414
 ```bash
 npm run dev
 ```
 
-<<<<<<< HEAD
 Visit [http://localhost:3001](http://localhost:3001)
 
 ## 📋 Implementation Status
@@ -303,32 +238,17 @@ This platform is built on the following New Testament principles:
 ---
 
 **"For where two or three gather in my name, there am I with them."** - Matthew 18:20
-=======
-4. **Open in browser**
-```
-http://localhost:3000
-```
-
-### **API Setup (Optional)**
-
-Get your free API keys to unlock all features:
-
-1. **Bible API**: [scripture.api.bible](https://scripture.api.bible) - 1000 requests/month free
-2. **Firecrawl API**: [firecrawl.dev](https://firecrawl.dev) - Web scraping for Christian resources
-3. **Supabase**: [supabase.com](https://supabase.com) - Database for user management
-
-See [FREE_API_SETUP_GUIDE.md](./FREE_API_SETUP_GUIDE.md) for detailed instructions.
 
 ## 📁 **Project Structure**
 
 ```
 The-Church/
-├── 📄 index.html              # Main fellowship website
-├── 📄 signup.html             # User registration system
-├── 🎨 styles.css              # Responsive CSS styling
-├── ⚡ script.js               # Core JavaScript functionality
-├── 🔌 christian-apis-integration.js  # 10+ Christian APIs
-├── 🔌 bible-api-config.js     # Bible API configuration
+├── 📄 app/                    # Next.js App Router
+├── 📄 components/             # Reusable UI components  
+├── 📄 lib/                    # Utility functions & config
+├── 🎨 styles/                 # CSS and styling
+├── ⚡ middleware.ts           # Authentication middleware
+├── 🔌 supabase/              # Database configuration
 ├── 🔌 firecrawl-config.js     # Web scraping setup
 ├── 🔌 supabase-config.js      # Database configuration
 ├── 📦 package.json            # Dependencies and scripts
@@ -462,4 +382,3 @@ If this project blesses you or your community, please ⭐ **star this repository
 **Made with ❤️ for the global Christian community**
 
 *This website serves the biblical understanding of fellowship as a community of believers gathered in authentic relationship, not as an institutional church structure.*
->>>>>>> 41b78f42a4492721aae751d5419b5c0364fcf414
